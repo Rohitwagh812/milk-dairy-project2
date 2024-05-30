@@ -21,7 +21,7 @@ body{
 .app{
   position: relative;
   max-width: 100vw;
-  height: 90vh;
+  height: 95vh;
   background-image: url('../src/assets/image/laptop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
