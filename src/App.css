@@ -52,6 +52,6 @@ body{
 
 .bg-body-tertiary {
   position: absolute;
-  bottom: 0;
+  bottom: 10;
   width: 100vw !important;
 }
