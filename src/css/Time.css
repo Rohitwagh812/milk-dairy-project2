@@ -1,0 +1,35 @@
+
+
+.time-page{
+    padding: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.time-page h5{
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    /* animation: pulse 1.5s 2s ease infinite; */
+}
+
+
+@keyframes pulse {
+    0%{
+        transform: rotate(-10deg);
+    }
+
+    25%{
+        transform: rotate(0deg);
+    }
+
+    50%{
+        transform: rotate(10deg);
+    }
+
+    100%{
+        transform: rotate(-10deg);
+    }
+  }
+  
+  

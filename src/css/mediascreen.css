@@ -1,0 +1,7 @@
+
+
+@media screen and (max-width: 768px) {
+    .navbar-div .bg-body-tertiary{
+        padding: 0 !important;
+      }
+}
