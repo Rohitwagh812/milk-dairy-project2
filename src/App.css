@@ -22,10 +22,11 @@ body{
   position: relative;
   max-width: 100vw;
   height: 100vh;
-  background-image: url('../src/assets/image/laptop.jpg');
+  background-color: rgba(0, 0, 0, 0.103);
+  /* background-image: url('../src/assets/image/laptop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-clip:border-box;
+  background-clip:border-box; */
 }
 
 .navbar-collapse {
@@ -47,11 +48,4 @@ body{
   background-image: none !important;
   background-position: center;
   background-size: 80%;
-}
-
-
-.bg-body-tertiary {
-  position: absolute;
-  bottom: 0;
-  width: 100vw !important;
 }
