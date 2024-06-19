@@ -5,11 +5,19 @@ import { Button , Table } from 'react-bootstrap';
 import print from '../assets/images/printer.png'
 import lefts from '../assets/images/left.png'
 import add from '../assets/images/add.png'
+import dots from '../assets/images/dots.png'
+import data from '../pages/data.json'
 
 function Users() {
 
   // const navigate  
 
+  const items = Array.isArray(data) ? data : data.items;
+
+  const capitalizeFirstLetter = (string) => {
+    if (!string) return '';
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
 
 
   return (
@@ -43,13 +51,32 @@ function Users() {
                 </div>
                 <div className="last">
                   <div className="last-first">
-                    <Table className='table'>
+                    <Table className='table-one'>
                       <tr>
                         <th>ID</th>
-                        <th>Name</th>
-                        <th>Phone Number</th>
-                        <th>Action</th>
+                        <th className='name'>Name</th>
+                        <th className='phone'>Phone Number</th>
+                        <th className='action'>Action</th>
                       </tr>
+                    </Table>
+                    <Table className='table-two'>
+                      
+                      <tbody>
+
+                            {
+                              items.map((item)=>{
+                                return(
+                                  <tr>
+                                    <td>{item.id}</td>
+                                    <td>{capitalizeFirstLetter(item.name)}</td>
+                                    <td>{item.phone}</td>
+                                    <td><img src={dots} alt="" /></td>
+                                  </tr>
+                                )
+                              })
+                            }
+                      
+                      </tbody>
                     </Table>
                   </div>
                 </div>

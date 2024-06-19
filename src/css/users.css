@@ -140,12 +140,41 @@
     padding: 10px 0 10px 0;
   }
 
-  .users-page .main .haed .last .last-first .table{
+  .users-page .main .haed .last .last-first .table-one{
     /* caption-side: none !important; */
     border-collapse: separate !important;
     background-color: #0D6EFD;
     padding: 10px !important;
+    margin: 0 !important;
     /* display: flex;
     align-items: center; */
   }
 
+  .users-page .main .haed .last .last-first .table-one tr .name{
+    text-align: end;
+  }
+
+  .users-page .main .haed .last .last-first .table-one tr .phone{
+    text-align: end;
+  }
+
+  .users-page .main .haed .last .last-first .table-one tr .action{
+    text-align: end;
+    width: 60px;
+  }
+
+  .users-page .main .haed .last .last-first .table-two {
+    background-color: transparent !important;
+    padding: 100px !important;
+  }
+
+  .table>:not(caption)>*>* { 
+    background-color: rgba(0, 0, 0, 0.18) !important;
+    color: #fff !important; 
+}
+
+.users-page .main .haed .last .last-first .table-two img{
+    height: 20px;
+    padding: none !important;
+    text-transform: uppercase;
+} 
