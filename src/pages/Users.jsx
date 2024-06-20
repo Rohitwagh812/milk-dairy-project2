@@ -59,14 +59,14 @@ function Users() {
                 <div className="last">
                   <div className="last-first">
                     <Table className='table-one'>
-                    <thead >
+                    {/* <thead > */}
                       <tr>
                         <th>ID</th>
                         <th className='name'>Name</th>
                         <th className='phone'>Phone Number</th>
                         <th className='action'>Action</th>
                       </tr>
-                      </thead>
+                      {/* </thead> */}
                     </Table> 
                     <div className="back"> 
                     <Table className='table-two'> 
