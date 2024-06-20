@@ -7,10 +7,12 @@ import lefts from '../assets/images/left.png'
 import add from '../assets/images/add.png'
 import dots from '../assets/images/dots.png'
 import data from '../pages/data.json'
+import { useNavigate } from 'react-router';
 
 function Users() {
 
-  // const navigate  
+
+  const navigate = useNavigate()
 
   const items = Array.isArray(data) ? data : data.items;
 
@@ -20,13 +22,18 @@ function Users() {
   };
 
 
+  const clicktoback = () =>{
+    navigate('/')
+  }
+
+
   return (
     <div className="users-page">
         <div className="main">
             <div className="haed">
                 <div className="top">
                     <div className="one">
-                      <img src={lefts} alt="" /> 
+                      <img onClick={clicktoback} src={lefts} alt="" /> 
                       <h4> User List </h4>
                     </div>
                    <div className="two">
