@@ -6,6 +6,7 @@
    max-width: 100vw;
    background-color: rgba(0, 0, 0, 0.916);
    height: 100vh;
+   /* overflow: hidden; */
 }
 
 /* rgba(0, 0, 0, 0.253) */
@@ -163,14 +164,17 @@
     width: 60px;
   }
 
-  .users-page .main .haed .last .last-first .table-two {
+  .users-page .main .haed .last .last-first .back table {
     background-color: transparent !important;
     padding: 100px !important;
+    /* height: 80vh !important; */
+    overflow: hidden;
   }
 
   .table>:not(caption)>*>* { 
     background-color: rgba(0, 0, 0, 0.18) !important;
     color: #fff !important; 
+    /* height: 80vh !important; */
 }
 
 .users-page .main .haed .last .last-first .table-two img{

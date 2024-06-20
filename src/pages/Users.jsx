@@ -52,17 +52,18 @@ function Users() {
                 <div className="last">
                   <div className="last-first">
                     <Table className='table-one'>
+                    <thead >
                       <tr>
                         <th>ID</th>
                         <th className='name'>Name</th>
                         <th className='phone'>Phone Number</th>
                         <th className='action'>Action</th>
                       </tr>
-                    </Table>
-                    <Table className='table-two'>
-                      
-                      <tbody>
-
+                      </thead>
+                    </Table> 
+                    <div className="back"> 
+                    <Table className='table-two'> 
+                      <tbody> 
                             {
                               items.map((item)=>{
                                 return(
@@ -74,10 +75,10 @@ function Users() {
                                   </tr>
                                 )
                               })
-                            }
-                      
+                            } 
                       </tbody>
-                    </Table>
+                    </Table> 
+                    </div>
                   </div>
                 </div>
             </div>
